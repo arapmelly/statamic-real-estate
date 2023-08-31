@@ -1,0 +1,178 @@
+title: Agent
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: first_name
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'First Name'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: last_name
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Last Name'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: contact
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Contact
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: address
+            field:
+              antlers: false
+              type: textarea
+              display: Address
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: license_number
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'License Number'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: sales_number
+            field:
+              input_type: number
+              antlers: false
+              type: text
+              display: 'Sales Number'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: properties_sold
+            field:
+              input_type: number
+              antlers: false
+              type: text
+              display: 'Properties Sold'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: national_id
+            field:
+              input_type: number
+              antlers: false
+              type: text
+              display: 'National ID'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: age
+            field:
+              input_type: number
+              antlers: false
+              type: text
+              display: Age
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: gender
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Gender
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              duplicate: false
+              hide_display: false
+          -
+            handle: company
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Company
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: phone
+            field:
+              input_type: number
+              antlers: false
+              type: text
+              display: phone
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: viewing_time
+            field:
+              input_type: time
+              antlers: false
+              type: text
+              display: 'viewing time'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
