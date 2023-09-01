@@ -1,8 +1,39 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: Home
+template: page
+updated_by: f3bee7c4-e3a0-4de8-908c-3af552b99570
+updated_at: 1693563772
+blocks:
+  -
+    id: lm0fypd2
+    type: carousel
+    enabled: true
+  -
+    id: lm0g4aor
+    type: popular-city
+    enabled: true
+  -
+    id: lm0g4g6x
+    type: featured-property
+    enabled: true
+  -
+    id: lm0g4lwt
+    type: about
+    enabled: true
+  -
+    id: lm0g4rme
+    type: testimonial
+    enabled: true
+  -
+    id: lm0g4v7f
+    type: blog
+    enabled: true
+  -
+    id: lm0g4zuj
+    type: call-to-action
+    enabled: true
 ---
 ## Welcome to your brand new Statamic site!
 

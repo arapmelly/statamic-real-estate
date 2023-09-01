@@ -1,0 +1,196 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: acquisition_type
+            field:
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: 'Acquisition type'
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: bedrooms
+            field:
+              type: float
+              display: bedrooms
+              icon: float
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: bathrooms
+            field:
+              type: integer
+              display: Bathrooms
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: square_feet
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Square feet'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: garages
+            field:
+              type: integer
+              display: Garages
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: agent
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Agent
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: date
+            field:
+              mode: single
+              inline: false
+              full_width: false
+              columns: 1
+              rows: 1
+              time_enabled: false
+              time_seconds_enabled: false
+              type: date
+              display: Date
+              icon: date
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: number_of_views
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Number of Views'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: bookings
+            field:
+              type: integer
+              display: bookings
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: map
+            field:
+              antlers: false
+              type: textarea
+              display: Map
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: rating
+            field:
+              type: float
+              display: rating
+              icon: float
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: likes
+            field:
+              type: integer
+              display: likes
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: reviews
+            field:
+              antlers: false
+              type: textarea
+              display: Reviews
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: viewing_time
+            field:
+              seconds_enabled: false
+              type: time
+              display: 'viewing time'
+              icon: time
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: availability
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Availability
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+title: Unit
