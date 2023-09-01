@@ -1,0 +1,16 @@
+tree:
+  -
+    id: 120e4652-162a-42cb-a040-1162ed3ac3de
+    title: Facebook
+    data:
+      icon: 'fa fa-facebook'
+  -
+    id: d6cf05c3-e35d-4b97-b6b6-33318fbb1b20
+    title: Twitter
+    data:
+      icon: 'fa fa-twitter'
+  -
+    id: 696d5249-386d-4664-8db5-013fd497c24c
+    title: Instagram
+    data:
+      icon: 'fa fa-instagram'

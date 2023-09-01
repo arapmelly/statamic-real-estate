@@ -63,6 +63,36 @@ tabs:
                       instructions: null
                       icon: null
                       fields: {  }
+                    listing-list:
+                      display: listing-list
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    breadcrumb:
+                      display: breadcrumb
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    property-list:
+                      display: property-list
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    single-property-detail:
+                      display: single-property-detail
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    agent-listing-list:
+                      display: agent-listing-list
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    agents-profile:
+                      display: agents-profile
+                      instructions: null
+                      icon: null
+                      fields: {  }
               type: replicator
               display: blocks
               icon: replicator
