@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: page
 updated_by: f3bee7c4-e3a0-4de8-908c-3af552b99570
-updated_at: 1693563772
+updated_at: 1693644101
 blocks:
   -
     id: lm0fypd2
@@ -21,6 +21,10 @@ blocks:
   -
     id: lm0g4lwt
     type: about
+    enabled: true
+  -
+    id: lm1ry8ou
+    type: project-partners
     enabled: true
   -
     id: lm0g4rme

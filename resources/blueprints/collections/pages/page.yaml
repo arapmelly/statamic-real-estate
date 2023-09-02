@@ -23,6 +23,11 @@ tabs:
                   instructions: null
                   icon: null
                   sets:
+                    404:
+                      display: '404'
+                      instructions: null
+                      icon: null
+                      fields: {  }
                     carousel:
                       display: carousel
                       instructions: null
@@ -90,6 +95,51 @@ tabs:
                       fields: {  }
                     agents-profile:
                       display: agents-profile
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    agency-listing:
+                      display: agency-listing
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    blog-page:
+                      display: blog-page
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    contact:
+                      display: contact
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    image-breadcrumb:
+                      display: image-breadcrumb
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    login:
+                      display: login
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    our-team:
+                      display: our-team
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    register:
+                      display: register
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    single-blog-page:
+                      display: single-blog-page
+                      instructions: null
+                      icon: null
+                      fields: {  }
+                    project-partners:
+                      display: project-partners
                       instructions: null
                       icon: null
                       fields: {  }
