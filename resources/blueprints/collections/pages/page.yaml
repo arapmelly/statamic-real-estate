@@ -32,47 +32,1019 @@ tabs:
                       display: carousel
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: carousel
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: first_heading
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'First Heading'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: second_heading
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'Second Heading'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: description
+                                        field:
+                                          antlers: false
+                                          type: textarea
+                                          display: Description
+                                          icon: textarea
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: image
+                                        field:
+                                          max_files: 1
+                                          mode: list
+                                          container: assets
+                                          restrict: false
+                                          allow_uploads: true
+                                          show_filename: true
+                                          show_set_alt: true
+                                          type: assets
+                                          display: Image
+                                          icon: assets
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: link
+                                        field:
+                                          type: link
+                                          display: link
+                                          icon: link
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: carousel
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     search:
                       display: search
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: search
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: dropdown_title
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'Dropdown title'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: options
+                                        field:
+                                          collapse: false
+                                          previews: true
+                                          fullscreen: true
+                                          sets:
+                                            new_set_group:
+                                              display: 'New Set Group'
+                                              instructions: null
+                                              icon: null
+                                              sets:
+                                                new_set:
+                                                  display: 'New Set'
+                                                  instructions: null
+                                                  icon: null
+                                                  fields:
+                                                    -
+                                                      handle: title
+                                                      field:
+                                                        input_type: text
+                                                        antlers: false
+                                                        type: text
+                                                        display: title
+                                                        icon: text
+                                                        listable: hidden
+                                                        instructions_position: above
+                                                        visibility: visible
+                                                        hide_display: false
+                                          type: replicator
+                                          display: Options
+                                          icon: replicator
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: Search
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: button_text
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'button text'
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: button_icon
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'button icon'
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     popular-city:
                       display: popular-city
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: first_heading
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'First Heading'
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: Description
+                            icon: textarea
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: cards
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: image
+                                        field:
+                                          max_files: 1
+                                          mode: list
+                                          container: assets
+                                          restrict: false
+                                          allow_uploads: true
+                                          show_filename: true
+                                          show_set_alt: true
+                                          type: assets
+                                          display: image
+                                          icon: assets
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: title
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: title
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: description
+                                        field:
+                                          antlers: false
+                                          type: textarea
+                                          display: description
+                                          icon: textarea
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: link
+                                        field:
+                                          type: link
+                                          display: link
+                                          icon: link
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: cards
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     featured-property:
                       display: featured-property
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: title
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: Description
+                            icon: textarea
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: cards
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: card_title
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'card title'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: card_image
+                                        field:
+                                          max_files: 1
+                                          mode: list
+                                          container: assets
+                                          restrict: false
+                                          allow_uploads: true
+                                          show_filename: true
+                                          show_set_alt: true
+                                          type: assets
+                                          display: 'card image'
+                                          icon: assets
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: card_info
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'card info'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: property
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: property
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: second_title
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'second title'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: property_link
+                                        field:
+                                          type: link
+                                          display: 'property link'
+                                          icon: link
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: description
+                                        field:
+                                          antlers: false
+                                          type: textarea
+                                          display: description
+                                          icon: textarea
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: utilities
+                                        field:
+                                          collapse: false
+                                          previews: true
+                                          fullscreen: true
+                                          sets:
+                                            new_set_group:
+                                              display: 'New Set Group'
+                                              instructions: null
+                                              icon: null
+                                              sets:
+                                                new_set:
+                                                  display: 'New Set'
+                                                  instructions: null
+                                                  icon: null
+                                                  fields:
+                                                    -
+                                                      handle: title
+                                                      field:
+                                                        input_type: text
+                                                        antlers: false
+                                                        type: text
+                                                        display: title
+                                                        icon: text
+                                                        listable: hidden
+                                                        instructions_position: above
+                                                        visibility: visible
+                                                        hide_display: false
+                                                    -
+                                                      handle: number
+                                                      field:
+                                                        input_type: text
+                                                        antlers: false
+                                                        type: text
+                                                        display: number
+                                                        icon: text
+                                                        listable: hidden
+                                                        instructions_position: above
+                                                        visibility: visible
+                                                        hide_display: false
+                                          type: replicator
+                                          display: Utilities
+                                          icon: replicator
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: footer_image
+                                        field:
+                                          mode: list
+                                          container: assets
+                                          restrict: false
+                                          allow_uploads: true
+                                          show_filename: true
+                                          show_set_alt: true
+                                          type: assets
+                                          display: 'footer image'
+                                          icon: assets
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                          max_files: 1
+                                      -
+                                        handle: agent_name
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'agent name'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: amount
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: amount
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: link
+                                        field:
+                                          type: link
+                                          display: link
+                                          icon: link
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: cards
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     about:
                       display: about
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: title
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: markdown
+                          field:
+                            restrict: false
+                            buttons:
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - quote
+                              - link
+                              - image
+                              - table
+                            automatic_line_breaks: true
+                            automatic_links: false
+                            escape_markup: false
+                            heading_anchors: false
+                            smartypants: false
+                            table_of_contents: false
+                            antlers: false
+                            type: markdown
+                            display: markdown
+                            icon: markdown
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: link
+                          field:
+                            type: link
+                            display: link
+                            icon: link
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: cta
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: cta
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: first_image
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: first_image
+                            icon: assets
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: second_image
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: second_image
+                            icon: assets
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     testimonial:
                       display: testimonial
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: title
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: description
+                            icon: textarea
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: testimonial
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: review
+                                        field:
+                                          antlers: false
+                                          type: textarea
+                                          display: review
+                                          icon: textarea
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: image
+                                        field:
+                                          mode: list
+                                          container: assets
+                                          restrict: false
+                                          allow_uploads: true
+                                          show_filename: true
+                                          show_set_alt: true
+                                          type: assets
+                                          display: image
+                                          icon: assets
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                          max_files: 1
+                                      -
+                                        handle: name
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: name
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: description
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: description
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: testimonial
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     blog:
                       display: blog
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: title
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: description
+                            icon: textarea
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: cards
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: body_image
+                                        field:
+                                          max_files: 1
+                                          mode: list
+                                          container: assets
+                                          restrict: false
+                                          allow_uploads: true
+                                          show_filename: true
+                                          show_set_alt: true
+                                          type: assets
+                                          display: 'body image'
+                                          icon: assets
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: category
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: category
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: body_link
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'body link'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: body_cta_link
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'body cta link'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: card_description
+                                        field:
+                                          antlers: false
+                                          type: textarea
+                                          display: 'card description'
+                                          icon: textarea
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: name
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: name
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: footer_image
+                                        field:
+                                          mode: list
+                                          container: assets
+                                          restrict: false
+                                          allow_uploads: true
+                                          show_filename: true
+                                          show_set_alt: true
+                                          type: assets
+                                          display: 'footer image'
+                                          icon: assets
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                          max_files: 1
+                                      -
+                                        handle: footer_link
+                                        field:
+                                          type: link
+                                          display: 'footer link'
+                                          icon: link
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: footer_cta
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'footer cta'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: button_cta
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'button cta'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: button_link
+                                        field:
+                                          type: link
+                                          display: 'button link'
+                                          icon: link
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: button_icon
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: 'button icon'
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: cards
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     call-to-action:
                       display: call-to-action
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: title
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: description
+                            icon: textarea
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: cta_link
+                          field:
+                            type: link
+                            display: 'cta link'
+                            icon: link
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: cta
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: cta
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     listing-list:
                       display: listing-list
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: houses
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        import: houses
+                            type: replicator
+                            display: houses
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     breadcrumb:
                       display: breadcrumb
                       instructions: null
@@ -92,12 +1064,267 @@ tabs:
                       display: agent-listing-list
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: agents
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        import: agents
+                            type: replicator
+                            display: agents
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     agents-profile:
                       display: agents-profile
                       instructions: null
                       icon: null
-                      fields: {  }
+                      fields:
+                        -
+                          handle: link
+                          field:
+                            type: link
+                            display: link
+                            icon: link
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: image
+                            icon: assets
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: listing
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: listing
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: name
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: name
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: description
+                            icon: textarea
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: contact
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: link
+                                        field:
+                                          type: link
+                                          display: link
+                                          icon: link
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: name
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: name
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: number
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: number
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: contact
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: icons
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: name
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: name
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: icon
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: icon
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: icons
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description_markdown
+                          field:
+                            restrict: false
+                            buttons:
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - quote
+                              - link
+                              - image
+                              - table
+                            automatic_line_breaks: true
+                            automatic_links: false
+                            escape_markup: false
+                            heading_anchors: false
+                            smartypants: false
+                            table_of_contents: false
+                            antlers: false
+                            type: markdown
+                            display: 'description markdown'
+                            icon: markdown
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description_link
+                          field:
+                            type: link
+                            display: 'description link'
+                            icon: link
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description_cta
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'description cta'
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description_title
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'description title'
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
                     agency-listing:
                       display: agency-listing
                       instructions: null
@@ -142,6 +1369,248 @@ tabs:
                       display: project-partners
                       instructions: null
                       icon: null
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: title
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: description
+                            icon: textarea
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: logos
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: image
+                                        field:
+                                          max_files: 1
+                                          mode: list
+                                          container: assets
+                                          restrict: false
+                                          allow_uploads: true
+                                          show_filename: true
+                                          show_set_alt: true
+                                          type: assets
+                                          display: image
+                                          icon: assets
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: logos
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                    agency-profile:
+                      display: agency-profile
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: link
+                          field:
+                            type: link
+                            display: link
+                            icon: link
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: Image
+                            icon: assets
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: listing
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: listing
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: company_name
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'company name'
+                            icon: text
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: description
+                            icon: textarea
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: contact
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: link
+                                        field:
+                                          type: link
+                                          display: link
+                                          icon: link
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: name
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: name
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: number
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: number
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: contact
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: icons
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: name
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: name
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                                      -
+                                        handle: icon
+                                        field:
+                                          input_type: text
+                                          antlers: false
+                                          type: text
+                                          display: icon
+                                          icon: text
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          hide_display: false
+                            type: replicator
+                            display: icons
+                            icon: replicator
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                    new_set:
+                      display: 'New Set'
+                      instructions: null
+                      icon: null
                       fields: {  }
               type: replicator
               display: blocks
@@ -181,4 +1650,5 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              folder: partials
 title: Page

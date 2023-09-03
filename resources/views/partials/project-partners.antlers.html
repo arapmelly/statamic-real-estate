@@ -3,9 +3,8 @@
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
                 <div class="title__head">
-                    <h2 class="text-center text-capitalize">our partners</h2>
-                    <p class="text-center text-capitalize">Brand Partners Successful Projects Trusted Many Clients
-                        Real Estate</p>
+                    <h2 class="text-center text-capitalize">{{ title }}</h2>
+                    <p class="text-center text-capitalize">{{ description }}</p>
                 </div>
             </div>
         </div>
@@ -13,21 +12,11 @@
             <div class="col-md-12">
                 <div class="projects__partner-logo">
                     <ul class="list-inline mb-0">
+                        {{ logos }}
                         <li class="list-inline-item">
-                            <img src="images/partner-logo6.png" alt="" class="img-fluid">
+                            <img src="{{image}}" alt="" class="img-fluid">
                         </li>
-                        <li class="list-inline-item">
-                            <img src="images/partner-logo7.png" alt="" class="img-fluid">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="images/partner-logo8.png" alt="" class="img-fluid">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="images/partner-logo1.png" alt="" class="img-fluid">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="images/partner-logo5.png" alt="" class="img-fluid">
-                        </li>
+                        {{ /logos }}
                     </ul>
                 </div>
             </div>
