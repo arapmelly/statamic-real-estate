@@ -11,3 +11,9 @@ preferences:
         - phone_number
         - email
         - status
+    contractors:
+      columns:
+        - title
+        - contractor_type
+        - phone_number
+        - status
