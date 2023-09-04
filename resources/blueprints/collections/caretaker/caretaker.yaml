@@ -9,6 +9,8 @@ tabs:
             field:
               type: text
               required: true
+              validate:
+                - required
           -
             import: workers
   sidebar:
@@ -21,4 +23,4 @@ tabs:
             field:
               type: slug
               localizable: true
-title: Caretaker
+title: Caretakers

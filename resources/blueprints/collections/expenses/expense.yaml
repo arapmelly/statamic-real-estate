@@ -5,33 +5,6 @@ tabs:
       -
         fields:
           -
-            handle: title
-            field:
-              type: text
-              required: true
-          -
-            handle: property_name
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'Property Name'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: amount
-            field:
-              type: float
-              display: Amount
-              icon: float
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
             handle: date
             field:
               mode: single
@@ -48,21 +21,22 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              width: 50
+              instructions: 'Enter the expense date'
           -
-            handle: category
+            handle: title
             field:
-              taggable: false
-              push_tags: false
-              multiple: false
-              clearable: false
-              searchable: true
-              cast_booleans: false
-              type: select
-              display: Category
-              icon: select
-              listable: hidden
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+              instructions: 'Enter the title of the expense'
               instructions_position: above
+              listable: hidden
               visibility: visible
+              input_type: text
+              antlers: false
               hide_display: false
           -
             handle: description
@@ -75,6 +49,18 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              instructions: 'Enter the description of the expense'
+          -
+            handle: amount
+            field:
+              type: float
+              display: Amount
+              icon: float
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              instructions: 'Enter the expense amount'
   sidebar:
     display: Sidebar
     sections:
@@ -85,4 +71,36 @@ tabs:
             field:
               type: slug
               localizable: true
+          -
+            handle: property
+            field:
+              max_items: 1
+              mode: typeahead
+              create: false
+              collections:
+                - properties
+              type: entries
+              display: property
+              icon: entries
+              instructions: 'Select the property'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: unit
+            field:
+              max_items: 1
+              mode: typeahead
+              create: false
+              collections:
+                - units
+              type: entries
+              display: Unit
+              icon: entries
+              instructions: 'Select the unit'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
 title: Expense

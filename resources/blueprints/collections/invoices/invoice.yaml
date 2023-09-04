@@ -5,16 +5,70 @@ tabs:
       -
         fields:
           -
+            handle: invoice_date
+            field:
+              mode: single
+              inline: false
+              full_width: false
+              columns: 1
+              rows: 1
+              time_enabled: false
+              time_seconds_enabled: false
+              type: date
+              display: 'invoice date'
+              icon: date
+              instructions: 'Enter the invoice date'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: title
             field:
               type: text
               required: true
+              width: 50
+              validate:
+                - required
+              display: 'Invoice Number'
+              instructions: 'Enter the invoice number'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              input_type: text
+              antlers: false
+              hide_display: false
           -
-            handle: amount
+            handle: property
             field:
-              type: float
-              display: Amount
-              icon: float
+              max_items: 1
+              mode: typeahead
+              create: false
+              collections:
+                - properties
+              type: entries
+              display: property
+              icon: entries
+              instructions: 'Select the property'
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: unit
+            field:
+              max_items: 1
+              mode: typeahead
+              create: false
+              collections:
+                - units
+              type: entries
+              display: unit
+              icon: entries
+              instructions: 'Select the unit'
+              width: 33
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -22,23 +76,67 @@ tabs:
           -
             handle: tenant
             field:
-              input_type: text
-              antlers: false
-              type: text
+              max_items: 1
+              mode: typeahead
+              create: false
+              collections:
+                - tenant
+              type: entries
               display: Tenant
-              icon: text
+              icon: entries
+              instructions: 'Select the tenant'
+              width: 33
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
           -
-            handle: property
+            handle: items
             field:
-              input_type: text
-              antlers: false
-              type: text
-              display: Property
-              icon: text
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_item:
+                      display: 'New Item'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: description
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: description
+                            icon: text
+                            instructions: 'Enter item description'
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: amount
+                          field:
+                            type: float
+                            display: amount
+                            icon: float
+                            instructions: 'Enter item amount'
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+              type: replicator
+              display: items
+              icon: replicator
+              instructions: 'Enter the invoice items'
               listable: hidden
               instructions_position: above
               visibility: visible

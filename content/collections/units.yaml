@@ -1,5 +1,15 @@
 title: Units
+template: units/show
+layout: layouts/layout
 revisions: false
+route: 'units/{slug}'
+date: true
+sort_dir: asc
 date_behavior:
   past: public
   future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

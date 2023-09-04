@@ -5,65 +5,37 @@ tabs:
       -
         fields:
           -
+            handle: tenant_photo
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'tenant photo'
+              icon: assets
+              instructions: 'Add the profile photo of the tenant'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: title
             field:
               type: text
               required: true
-          -
-            handle: first_name
-            field:
+              validate:
+                - required
+              display: 'Full Names'
+              instructions: 'Enter the full names of the tenant'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
               input_type: text
               antlers: false
-              type: text
-              display: 'First Name'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: last_name
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'Last Name'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: age
-            field:
-              type: integer
-              display: Age
-              icon: integer
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: gender
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: Gender
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: national_id
-            field:
-              type: integer
-              display: 'National ID'
-              icon: integer
-              listable: hidden
-              instructions_position: above
-              visibility: visible
               hide_display: false
           -
             handle: nationality
@@ -77,18 +49,32 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              width: 50
+              instructions: 'Enter the nationality of the tenant'
           -
-            handle: property
+            handle: national_id
             field:
-              input_type: text
-              antlers: false
-              type: text
-              display: Property
-              icon: text
+              type: integer
+              display: 'National ID / Passport Number'
+              icon: integer
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
+              width: 50
+              instructions: 'Enter the ID / Passport number of the tenant'
+          -
+            handle: phone
+            field:
+              type: integer
+              display: Phone
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
+              instructions: 'Enter the phone number'
           -
             handle: email
             field:
@@ -101,12 +87,57 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              width: 50
+              instructions: 'Enter the email address'
           -
-            handle: phone
+            handle: emergency_contact
             field:
-              type: integer
-              display: Phone
-              icon: integer
+              input_type: tel
+              antlers: false
+              type: text
+              display: 'emergency contact'
+              icon: text
+              instructions: 'Enter the emergency contact'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+      -
+        display: Documents
+        instructions: 'Tenant Documents'
+        fields:
+          -
+            handle: id_copy
+            field:
+              max_files: 2
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'ID copy'
+              icon: assets
+              instructions: 'Upload a copy of ID/ Passport'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: contract
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Contract
+              icon: assets
+              instructions: 'Upload a copy of the contract'
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -121,4 +152,149 @@ tabs:
             field:
               type: slug
               localizable: true
-title: Tenant
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: property
+            field:
+              mode: typeahead
+              create: true
+              collections:
+                - properties
+              type: entries
+              display: Property
+              icon: entries
+              instructions: 'Select the tenant properties'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: units
+            field:
+              mode: typeahead
+              create: true
+              collections:
+                - units
+              type: entries
+              display: Units
+              icon: entries
+              instructions: 'Enter the tenant units'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  payments:
+    display: Payments
+    sections:
+      -
+        display: Payments
+        instructions: 'Tenant payments'
+        fields:
+          -
+            handle: payments
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_payment:
+                      display: 'New Payment'
+                      instructions: 'tenant paymets'
+                      icon: null
+                      fields:
+                        -
+                          handle: payment_date
+                          field:
+                            mode: single
+                            inline: false
+                            full_width: false
+                            columns: 1
+                            rows: 1
+                            time_enabled: false
+                            time_seconds_enabled: false
+                            type: date
+                            display: 'payment date'
+                            icon: date
+                            instructions: 'Enter the payment date'
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: payment_type
+                          field:
+                            mode: default
+                            create: true
+                            taxonomies:
+                              - payment_type
+                            type: terms
+                            display: 'payment type'
+                            icon: taxonomy
+                            instructions: 'Enter the payment type'
+                            width: 50
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: invoice_number
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'invoice number'
+                            icon: text
+                            instructions: 'Enter the invoice number'
+                            width: 33
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: payment_amount
+                          field:
+                            type: float
+                            display: 'payment amount'
+                            icon: float
+                            instructions: 'Enter the payment amount'
+                            width: 33
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+                        -
+                          handle: transaction_ref
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: 'transaction ref'
+                            icon: text
+                            instructions: 'Enter the transaction reference'
+                            width: 33
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+              type: replicator
+              display: payments
+              icon: replicator
+              instructions: 'tenant payments'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+title: Tenants

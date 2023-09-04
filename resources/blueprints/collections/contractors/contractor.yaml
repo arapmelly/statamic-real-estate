@@ -1,0 +1,148 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: photo
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Photo
+              icon: assets
+              instructions: 'Add photo of the contractor'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: contractor_type
+            field:
+              mode: default
+              create: true
+              type: terms
+              display: 'Contractor type'
+              icon: taxonomy
+              instructions: 'Enter the type of contractor'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              taxonomies:
+                - contractors
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: 'Full Names'
+              instructions: 'Enter the names of the contractor'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: description
+            field:
+              type: markdown
+              localizable: true
+              display: Description
+              instructions: 'Enter a brief description of the contractor'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              restrict: false
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              heading_anchors: false
+              smartypants: false
+              table_of_contents: false
+              antlers: false
+              hide_display: false
+          -
+            handle: phone_number
+            field:
+              input_type: tel
+              antlers: false
+              type: text
+              display: 'Phone number'
+              icon: text
+              instructions: 'Enter the phone number'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: email
+            field:
+              input_type: email
+              antlers: false
+              type: text
+              display: Email
+              icon: text
+              instructions: 'Enter the email'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: company
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: company
+              icon: text
+              instructions: 'Enter the company of the contractor'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: website
+            field:
+              input_type: url
+              antlers: false
+              type: text
+              display: website
+              icon: text
+              instructions: 'Enter the website address'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+title: Contractor

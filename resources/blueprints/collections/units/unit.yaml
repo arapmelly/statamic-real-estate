@@ -5,22 +5,75 @@ tabs:
       -
         fields:
           -
+            handle: featured_image
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Featured image'
+              icon: assets
+              instructions: 'Enter the featured image'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: title
             field:
               type: text
               required: true
+              validate:
+                - required
+              width: 50
+              display: 'Unit Number'
+              instructions: 'Enter the unit number'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              input_type: text
+              antlers: false
+              hide_display: false
           -
-            handle: acquisition_type
+            handle: price
             field:
-              taggable: false
-              push_tags: false
-              multiple: false
-              clearable: false
-              searchable: true
-              cast_booleans: false
-              type: select
-              display: 'Acquisition type'
-              icon: select
+              type: float
+              display: price
+              icon: float
+              instructions: 'Enter the unit price'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: description
+            field:
+              restrict: false
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              heading_anchors: false
+              smartypants: false
+              table_of_contents: false
+              antlers: false
+              type: markdown
+              display: Description
+              icon: markdown
+              instructions: 'Enter the description for the unit'
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -28,9 +81,13 @@ tabs:
           -
             handle: bedrooms
             field:
-              type: float
+              input_type: number
+              antlers: false
+              type: text
               display: bedrooms
-              icon: float
+              icon: text
+              instructions: 'Enter the number of bedrooms'
+              width: 33
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -38,9 +95,13 @@ tabs:
           -
             handle: bathrooms
             field:
-              type: integer
-              display: Bathrooms
-              icon: integer
+              input_type: number
+              antlers: false
+              type: text
+              display: bathrooms
+              icon: text
+              instructions: 'Enter the number of bathrooms'
+              width: 33
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -57,128 +118,70 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              width: 33
+              instructions: 'Enter the size in square feet'
+      -
+        display: Gallery
+        instructions: 'Unit gallery'
+        fields:
           -
-            handle: garages
+            handle: unit_images
             field:
-              type: integer
-              display: Garages
-              icon: integer
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_image:
+                      display: 'New Image'
+                      instructions: 'Add unit image'
+                      icon: null
+                      fields:
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: image
+                            icon: assets
+                            instructions: 'Add unit image'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            hide_display: false
+              type: replicator
+              display: 'unit images'
+              icon: replicator
+              instructions: 'Additional unit images'
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
+      -
+        display: Features
+        instructions: 'unit features'
+        fields:
           -
-            handle: agent
+            handle: unit_features
             field:
-              input_type: text
-              antlers: false
-              type: text
-              display: Agent
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: date
-            field:
-              mode: single
-              inline: false
-              full_width: false
-              columns: 1
-              rows: 1
-              time_enabled: false
-              time_seconds_enabled: false
-              type: date
-              display: Date
-              icon: date
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: number_of_views
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'Number of Views'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: bookings
-            field:
-              type: integer
-              display: bookings
-              icon: integer
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: map
-            field:
-              antlers: false
-              type: textarea
-              display: Map
-              icon: textarea
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: rating
-            field:
-              type: float
-              display: rating
-              icon: float
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: likes
-            field:
-              type: integer
-              display: likes
-              icon: integer
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: reviews
-            field:
-              antlers: false
-              type: textarea
-              display: Reviews
-              icon: textarea
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: viewing_time
-            field:
-              seconds_enabled: false
-              type: time
-              display: 'viewing time'
-              icon: time
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: availability
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: Availability
-              icon: text
+              mode: default
+              create: true
+              taxonomies:
+                - ammenities
+              type: terms
+              display: 'unit features'
+              icon: taxonomy
+              instructions: 'Add unit features'
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -193,4 +196,36 @@ tabs:
             field:
               type: slug
               localizable: true
+          -
+            handle: unit_location
+            field:
+              max_items: 1
+              mode: typeahead
+              create: true
+              taxonomies:
+                - locations
+              type: terms
+              display: 'unit Location'
+              icon: taxonomy
+              instructions: 'Select the unit location'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: unit_property
+            field:
+              max_items: 1
+              mode: typeahead
+              create: true
+              collections:
+                - properties
+              type: entries
+              display: 'unit property'
+              icon: entries
+              instructions: 'Select the unit property'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
 title: Unit

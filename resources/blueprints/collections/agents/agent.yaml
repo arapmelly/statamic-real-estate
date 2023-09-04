@@ -6,42 +6,113 @@ tabs:
       -
         fields:
           -
+            handle: agent_photo
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'agent photo'
+              icon: assets
+              instructions: 'Upload a profile photo for the agent'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: title
             field:
               type: text
               required: true
-          -
-            handle: first_name
-            field:
+              validate:
+                - required
+              display: 'Full Names'
+              instructions: 'Enter the Agents full names'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
               input_type: text
               antlers: false
-              type: text
-              display: 'First Name'
-              icon: text
+              hide_display: false
+          -
+            handle: description
+            field:
+              restrict: false
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              heading_anchors: false
+              smartypants: false
+              table_of_contents: false
+              antlers: false
+              type: markdown
+              display: description
+              icon: markdown
+              instructions: 'Enter a brief description for the agent'
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
           -
-            handle: last_name
+            handle: contacts
             field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'Last Name'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: contact
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: Contact
-              icon: text
+              fields:
+                -
+                  handle: type
+                  field:
+                    options:
+                      phone: Phone
+                      email: Email
+                      whatsapp: WhatsApp
+                    taggable: false
+                    push_tags: false
+                    multiple: false
+                    clearable: false
+                    searchable: true
+                    cast_booleans: false
+                    type: select
+                    display: type
+                    icon: select
+                    instructions: 'Pick contact type'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    width: 50
+                -
+                  handle: contact_value
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'contact value'
+                    icon: text
+                    instructions: 'Enter the contact value'
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+              mode: table
+              reorderable: true
+              fullscreen: true
+              type: grid
+              display: contacts
+              icon: grid
+              instructions: 'Enter the agents contacts'
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -57,6 +128,7 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              instructions: 'Enter the agents physical address'
           -
             handle: license_number
             field:
@@ -69,30 +141,8 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
-          -
-            handle: sales_number
-            field:
-              input_type: number
-              antlers: false
-              type: text
-              display: 'Sales Number'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: properties_sold
-            field:
-              input_type: number
-              antlers: false
-              type: text
-              display: 'Properties Sold'
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
+              width: 50
+              instructions: 'Enter the agents license number'
           -
             handle: national_id
             field:
@@ -105,31 +155,8 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
-          -
-            handle: age
-            field:
-              input_type: number
-              antlers: false
-              type: text
-              display: Age
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: gender
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: Gender
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              duplicate: false
-              hide_display: false
+              width: 50
+              instructions: 'Enter the agents ID Number'
           -
             handle: company
             field:
@@ -142,26 +169,18 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              width: 50
+              instructions: 'Enter the agents Company name'
           -
-            handle: phone
+            handle: website
             field:
-              input_type: number
+              input_type: url
               antlers: false
               type: text
-              display: phone
+              display: website
               icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: viewing_time
-            field:
-              input_type: time
-              antlers: false
-              type: text
-              display: 'viewing time'
-              icon: text
+              instructions: 'Enter the agents website address'
+              width: 50
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -176,3 +195,16 @@ tabs:
             field:
               type: slug
               localizable: true
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+  reviews:
+    display: Reviews
+    sections:
+      -
+        display: 'New Section'

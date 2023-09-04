@@ -1,0 +1,135 @@
+title: units
+fields:
+  -
+    handle: unit_featured_image
+    field:
+      max_files: 1
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: 'unit featured image'
+      icon: assets
+      instructions: 'Enter the featured image'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: unit_number
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: 'unit number'
+      icon: text
+      instructions: 'Enter the unit number'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: unit_description
+    field:
+      restrict: false
+      buttons:
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - quote
+        - link
+        - image
+        - table
+      automatic_line_breaks: true
+      automatic_links: false
+      escape_markup: false
+      heading_anchors: false
+      smartypants: false
+      table_of_contents: false
+      antlers: false
+      type: markdown
+      display: 'unit description'
+      icon: markdown
+      instructions: 'Enter a brief description'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: unit_price
+    field:
+      type: float
+      display: 'unit price'
+      icon: float
+      instructions: 'Enter the price of this unit'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: unit_images
+    field:
+      collapse: false
+      previews: true
+      fullscreen: true
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          instructions: null
+          icon: null
+          sets:
+            new_image:
+              display: 'New Image'
+              instructions: 'Enter unit image'
+              icon: null
+              fields:
+                -
+                  handle: unit_image
+                  field:
+                    max_files: 1
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    show_set_alt: true
+                    type: assets
+                    display: 'unit image'
+                    icon: assets
+                    instructions: 'Upload the unit image'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+      type: replicator
+      display: 'unit images'
+      icon: replicator
+      instructions: 'Enter additional unit images'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: unit_status
+    field:
+      options:
+        vacant: Vacant
+        occupied: Occupied
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      type: select
+      display: 'unit status'
+      icon: select
+      instructions: 'The status of the unit'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
