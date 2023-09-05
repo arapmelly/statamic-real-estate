@@ -163,7 +163,7 @@ tabs:
           -
             handle: property
             field:
-              mode: typeahead
+              mode: default
               create: true
               collections:
                 - properties
@@ -178,7 +178,7 @@ tabs:
           -
             handle: units
             field:
-              mode: typeahead
+              mode: default
               create: true
               collections:
                 - units

@@ -75,7 +75,7 @@ tabs:
             handle: property
             field:
               max_items: 1
-              mode: typeahead
+              mode: default
               create: false
               collections:
                 - properties
@@ -91,7 +91,7 @@ tabs:
             handle: unit
             field:
               max_items: 1
-              mode: typeahead
+              mode: default
               create: false
               collections:
                 - units

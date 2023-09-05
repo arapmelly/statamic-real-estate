@@ -43,7 +43,7 @@ tabs:
             handle: property
             field:
               max_items: 1
-              mode: typeahead
+              mode: default
               create: false
               collections:
                 - properties
@@ -60,7 +60,7 @@ tabs:
             handle: unit
             field:
               max_items: 1
-              mode: typeahead
+              mode: default
               create: false
               collections:
                 - units
@@ -77,7 +77,7 @@ tabs:
             handle: tenant
             field:
               max_items: 1
-              mode: typeahead
+              mode: default
               create: false
               collections:
                 - tenant
