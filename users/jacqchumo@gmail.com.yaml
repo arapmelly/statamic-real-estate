@@ -7,13 +7,39 @@ preferences:
     agents:
       columns:
         - title
-        - license_number
-        - phone_number
-        - email
         - status
+        - agent_photo
+        - contacts
     contractors:
       columns:
         - title
         - contractor_type
         - phone_number
         - status
+        - photo
+    properties:
+      columns:
+        - slug
+        - date
+        - status
+        - price
+        - property_type
+    bookings:
+      columns:
+        - slug
+        - status
+        - property
+        - purpose
+    expenses:
+      columns:
+        - slug
+        - status
+        - amount
+        - description
+    invoices:
+      columns:
+        - slug
+        - status
+        - items
+        - unit
+        - property

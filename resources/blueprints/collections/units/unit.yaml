@@ -200,7 +200,7 @@ tabs:
             handle: unit_location
             field:
               max_items: 1
-              mode: typeahead
+              mode: default
               create: true
               taxonomies:
                 - locations
@@ -216,7 +216,7 @@ tabs:
             handle: unit_property
             field:
               max_items: 1
-              mode: typeahead
+              mode: default
               create: true
               collections:
                 - properties
@@ -228,4 +228,12 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
 title: Unit
